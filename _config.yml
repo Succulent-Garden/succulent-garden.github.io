@@ -1,24 +1,37 @@
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+
 # Site settings
-# in the templates available like {{ site.myvariable }}.
-title: 奇妙植物
-email: your-email@domain.com
-brand: Your Name
-headline: Inventor, Engineer and Futurist
-description: > # this means to ignore newlines until "baseurl:"
-  New Site
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
-copyright: 2016 @奇妙植物. All Rights Reserved.
+title: Airspace
+subtitle: "A free HTML5 agency template"
+url: "https://comh.cf/" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+baseurl: "/airspace-jekyll"
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
 
-# Account ids
-snapwidget: 247552
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
 
-# Contacts
-email: your.name@gmail.com
-phone: +1-800-555-2016
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
 
-# Tracking
-googleAnalitycsID: UA-83933844-1
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
